@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
     public ParticleSystem explosionParticle;
     [SerializeField] private float speed = 5f;

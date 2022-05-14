@@ -1,13 +1,12 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
     public Transform muzzleTransform;
     public Bullet bulletPrefab;
 
-    private int[] rotations = new int[4] {0, 180, 90, -90};
+private int[] rotations = new int[4] {0, 180, 90, -90}; 
     private Vector3[] velocities = new Vector3[4] {new Vector3(0, 0, 1), new Vector3(0, 0, -1),
                                                 new Vector3(1, 0, 0),new Vector3(-1, 0, 0)};
 

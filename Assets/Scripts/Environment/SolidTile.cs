@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SolidTile : MonoBehaviour
+public class SolidTile : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
     void onCollisionEnter(Collision collision)
     {

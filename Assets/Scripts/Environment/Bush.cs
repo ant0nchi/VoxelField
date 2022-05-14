@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bush : MonoBehaviour
+public class Bush : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
     void OnTriggerEnter(Collider other)
     {

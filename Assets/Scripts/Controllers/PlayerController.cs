@@ -1,21 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
     public Transform muzzleTransform;
     public Bullet bulletPrefab;
 
     public AudioClip[] shootSound;
 
-    [SerializeField] float speed = 3f;
-
-    private AudioSource audioSource;
+    private AudioSource audioSource; // ENCAPSULATION 
 
     private Transform bulletsParent;
     private Vector3 moveVelocity;
 
+    private float speed = 3f;
     private float timeBetweenShots = 1f;
     private float lastTimeShot;
 

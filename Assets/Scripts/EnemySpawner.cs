@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
     public int enemiesMaxValue = 3;
     public float spawnInterval = 2f;
@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     public Transform[] spawnPositons = new Transform[1];
     public Tank[] enemyTypes = new Tank[3];
 
-    private GameObject[] enemies;
+    private GameObject[] enemies; // ENCAPSULATION 
 
     void Start()
     {

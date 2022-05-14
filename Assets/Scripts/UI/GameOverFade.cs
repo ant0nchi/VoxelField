@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOverFade : MonoBehaviour
+public class GameOverFade : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
     void Awake()
     {

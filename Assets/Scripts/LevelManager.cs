@@ -1,20 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour
+public class LevelManager : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
-    public OnLevelText onLevelText;
+    public OnLevelText onLevelText; 
 
-    public int enemiesKilled = 0;
-    public int lightKilled = 0;
-    public int mediumKilled = 0;
-    public int heavyKilled = 0;
-    public int score = 0;
+    int enemiesKilled = 0; // ENCAPSULATION 
+    int lightKilled = 0; 
+    int mediumKilled = 0; 
+    int heavyKilled = 0; 
+    int score = 0; 
 
-    string levelName;
+    string levelName; 
 
     void Awake()
     {
@@ -66,7 +64,7 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    void SaveScore()
+    void SaveScore() 
     {
         SaveData data = new SaveData();
 
@@ -79,7 +77,7 @@ public class LevelManager : MonoBehaviour
         File.WriteAllText(Application.persistentDataPath + "/" + levelName +"_save.json", json);
     }
 
-    bool CheckScore()
+    bool CheckScore() 
     {
         string path = Application.persistentDataPath + "/" + levelName + "_save.json";
         if (File.Exists(path))

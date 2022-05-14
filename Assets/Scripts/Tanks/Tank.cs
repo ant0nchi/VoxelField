@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-public class Tank : MonoBehaviour
+public class Tank : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
     public ParticleSystem explosionParticle;
-    protected int health = 2;
+    protected int health = 2; // ENCAPSULATION 
 
     void OnCollisionEnter(Collision collision)
     {

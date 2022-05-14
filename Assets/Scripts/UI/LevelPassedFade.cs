@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelPassedFade : MonoBehaviour
+public class LevelPassedFade : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
     public Text Score;
 

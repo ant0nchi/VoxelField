@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class OnLevelText : MonoBehaviour
+public class OnLevelText : MonoBehaviour // INHERITANCE + ABSTRACTION
 {
     public Text enemiesCounterText;
     public Text healthText;

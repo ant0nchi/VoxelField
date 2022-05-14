@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerTank : Tank
+public class PlayerTank : Tank // INHERITANCE + ABSTRACTION
 {
     AudioSource audioSource;
     public AudioClip hurtSound;
@@ -10,13 +10,13 @@ public class PlayerTank : Tank
         health = 3;
     }
 
-    void Start()
+    void Start() // ENCAPSULATION 
     {
         audioSource = GetComponent<AudioSource>();
         EventManager.PlayerHarmed(health);
     }
 
-    protected override void GetDamage(Collision collision)
+    protected override void GetDamage(Collision collision) // POLYMORPHISM
     {
         if (collision.collider.tag == "Bullet")
         {
